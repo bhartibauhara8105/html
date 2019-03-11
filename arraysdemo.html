@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+<script Language="javascript">
+var f=['apple','orange','kiwi'];
+alert(f[1]);
+//add element in end of array
+f[3]='banana';
+f[f.length]='cherry';
+f.push('grape');
+//add element at begining
+f.unshift('blackberry');
+//iteration thru array in js
+document.write("the array contents are :");
+var i;
+for(i=0;i<f.length;i++)
+	{
+	document.write(f[i]);
+	document.write("<br/>");
+	}
+f.sort();
+//foreach
+document.write("**********");
+var text='';
+for(var i in f)
+	{
+	text+=f[i];
+	text+='n';
+	}
+document.write("<br>**********");
+docment.write(text);
+f.pop();
+f.shift();
+document.write("<br>**********");
+for(i=0;i<f.length;i++)
+	{
+	document.write(f[i]);
+	document.write("<br/>");
+	}
+document.write("****************");
+ var mystack=[[1234,"book",123.45],[1,2,3]];
+ var j;
+for(j=0;j<mystack.length;j++)
+	{
+	document.write(mystack[j]);
+	document.write('<br/>');
+	}
+	
+	
+	
+	
+</script>
+</body>
+</html>

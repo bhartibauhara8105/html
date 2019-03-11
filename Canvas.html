@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<canvas id="my canvas"width="200" height="100"style="border:1px solid #d3d3d3;">
+your browser does not support html canvas tag
+</canvas>
+<script>
+var c=documnet.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.lineWidth=10;
+ctx.strokeStyle='#0000ff';
+ctx.stroke();
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script Language="javascript">
+function myfunction()
+{
+	alert("you pressed a key inside input field");
+	}
+function myfunction1(x)
+{
+	x.style.background="yellow";
+	}
+function myfunction2()
+{
+	var x=document.getElementById("fname");
+       x.value=x.value.toUpperCase();
+
+}
+function myfunction3()
+{
+	alert("Welcome to home page");
+	}
+</script>
+</head>
+<body onload="myfunction3()">
+<p>function is triggered when the user is pressing key in the input field
+</p>
+Enter your Name:<input type="text" id="fname" onblur="myfunction2()">
+<input type="text" ankeypress="myfunction()" onfocus="myfunction1(this)">
+</body>
+</html>
